@@ -657,10 +657,18 @@ footer p {
 
 body.edit-mode [contenteditable="true"] {
   border: 1px dashed rgba(184, 142, 47, 0.4);
-  background-color: rgba(184, 142, 47, 0.04);
   padding: 2px 4px;
   border-radius: 4px;
   transition: var(--transition-smooth);
+}
+
+body.edit-mode [contenteditable="true"]:not(.btn-primary) {
+  background-color: rgba(184, 142, 47, 0.04);
+}
+
+body.edit-mode .btn-primary[contenteditable="true"] {
+  background-color: var(--accent-gold);
+  color: #FFF;
 }
 
 body.edit-mode [contenteditable="true"]:hover {

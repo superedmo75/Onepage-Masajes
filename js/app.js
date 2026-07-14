@@ -530,8 +530,8 @@ function setupSmoothScroll() {
           const navbarHeight = navbar.offsetHeight || 80;
           
           // Calcular la posición final restando el alto de la cabecera fija
-          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight + 15;
-          const startPosition = window.scrollY;
+          const startPosition = window.pageYOffset || window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+          const targetPosition = targetElement.getBoundingClientRect().top + startPosition - navbarHeight + 15;
           const distance = targetPosition - startPosition;
           const duration = 1000; // Duración de la transición en milisegundos (1 segundo)
           let startTime = null;

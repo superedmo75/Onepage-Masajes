@@ -9,6 +9,7 @@ let activeEditingImageElement = null;
 document.addEventListener("DOMContentLoaded", () => {
   initApp();
   setupNavbarScroll();
+  setupSmoothScroll();
 });
 
 // Inicializar la aplicación
@@ -508,3 +509,36 @@ function showToast(message, type = "success") {
     setTimeout(() => toast.remove(), 400);
   }, 3500);
 }
+
+// Configurar desplazamiento suave con offset para la navbar fija
+function setupSmoothScroll() {
+  // Selecciona los enlaces del menú y el botón del hero que vayan a anclas internas (#)
+  const links = document.querySelectorAll(".nav-links a, .hero-content a[href^='#']");
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      // Si estamos en modo edición, no interferir con la edición del texto
+      if (isEditMode) return;
+      
+      const targetId = link.getAttribute("href");
+      if (targetId && targetId.startsWith("#") && targetId !== "#") {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          
+          const navbar = document.getElementById("navbar");
+          // Si la navbar está scrolled (fixed), calculamos su altura, si no, usamos un estimado
+          const navbarHeight = navbar.offsetHeight || 80;
+          
+          // Calcular la posición final restando el alto de la cabecera fija
+          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight + 15;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+          });
+        }
+      }
+    });
+  });
+}
+

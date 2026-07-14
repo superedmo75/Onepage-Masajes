@@ -1,0 +1,182 @@
+{
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "title": "Tu Oasis de Bienestar y Relajación",
+      "subtitle": "Experiencias de masajes terapéuticos diseñadas para restaurar tu equilibrio natural y liberar el estrés diario en un espacio de paz absoluta.",
+      "buttonText": "Reservar Cita",
+      "buttonUrl": "#contacto",
+      "bgImage": "images/hero-bg.png"
+    },
+    "about": {
+      "title": "Nuestra Filosofía de Bienestar",
+      "text1": "En ZenVibe, creemos que el bienestar no es un lujo ocasional, sino una necesidad vital. Nos dedicamos a ofrecer un refugio de serenidad y relajación en medio del ajetreo cotidiano, brindando masajes y terapias adaptadas a las necesidades específicas de tu cuerpo.",
+      "text2": "Nuestras terapeutas expertas combinan técnicas tradicionales e innovadoras para aliviar tensiones profundas, calmar el sistema nervioso y revitalizar tu energía. Cada sesión está diseñada para ser una experiencia única y reparadora.",
+      "image": "images/about-spa.png"
+    },
+    "services": {
+      "title": "Nuestros Tratamientos Terapéuticos",
+      "subtitle": "Descubre nuestra selección de terapias y elige el masaje ideal para revitalizar tu cuerpo y descansar tu mente.",
+      "list": [
+        {
+          "id": "service-1",
+          "name": "Masaje Relajante con Aromaterapia",
+          "price": "60 €",
+          "duration": "60 min",
+          "description": "Masaje de cuerpo completo con aceites esenciales orgánicos para calmar el sistema nervioso, aliviar el estrés mental y relajar suavemente la musculatura.",
+          "image": "images/service-relax.png"
+        },
+        {
+          "id": "service-2",
+          "name": "Masaje Descontracturante Profundo",
+          "price": "70 €",
+          "duration": "60 min",
+          "description": "Terapia de tejido profundo diseñada para liberar contracturas severas, aliviar tensiones musculares acumuladas y recuperar la movilidad natural del cuerpo.",
+          "image": "images/service-deep.png"
+        },
+        {
+          "id": "service-3",
+          "name": "Terapia de Piedras Volcánicas Calientes",
+          "price": "85 €",
+          "duration": "75 min",
+          "description": "Combinación de masaje manual y colocación de piedras calientes sobre puntos clave de energía, permitiendo que el calor alivie el dolor muscular y relaje los tendones.",
+          "image": "images/service-stone.png"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Opiniones de Clientes Satisfechos",
+      "list": [
+        {
+          "quote": "Salí completamente renovada del masaje relajante. Las instalaciones transmiten una paz única y las terapeutas son muy profesionales. ¡Volveré pronto!",
+          "author": "Sofía Martínez",
+          "role": "Cliente Frecuente"
+        },
+        {
+          "quote": "Sufro de dolores crónicos de espalda por estar sentado frente al monitor todo el día. El masaje descontracturante me devolvió la vida. Muy recomendable.",
+          "author": "Carlos Ruiz",
+          "role": "Diseñador Gráfico"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Reserva tu Momento Zen",
+      "address": "Avenida de la Armonía 456, Planta Alta",
+      "phone": "+54 9 11 5555-1234",
+      "whatsapp": "+5491155551234",
+      "email": "hola@zenvibemasajes.com",
+      "hours": "Lunes a Sábado: 09:00 AM - 08:00 PM",
+      "labelAddress": "Dirección",
+      "labelPhone": "Teléfono",
+      "labelWhatsapp": "WhatsApp",
+      "labelEmail": "Correo Electrónico",
+      "labelHours": "Horarios de Atención",
+      "formTitle": "Envíanos un Mensaje",
+      "formName": "Nombre Completo",
+      "formNamePlaceholder": "Ingresa tu nombre",
+      "formEmail": "Correo Electrónico",
+      "formEmailPlaceholder": "Ingresa tu correo",
+      "formService": "Servicio de Interés",
+      "formServiceSelect": "Selecciona un servicio",
+      "formDate": "Fecha y Hora Tentativa",
+      "formSubmit": "Solicitar Cita",
+      "formAlert": "Cita solicitada. Nos contactaremos pronto."
+    }
+  },
+  "it": {
+    "nav": {
+      "home": "Inizio",
+      "about": "Chi Siamo",
+      "services": "Trattamenti",
+      "testimonials": "Recensioni",
+      "contact": "Contatti"
+    },
+    "hero": {
+      "title": "La tua Oasi di Benessere e Relax",
+      "subtitle": "Esperienze di massaggi terapeutici progettate per ripristinare il tuo equilibrio naturale e liberare lo stress quotidiano in uno spazio di pace assoluta.",
+      "buttonText": "Prenota un Appuntamento",
+      "buttonUrl": "#contacto",
+      "bgImage": "images/hero-bg.png"
+    },
+    "about": {
+      "title": "La nostra Filosofia del Benessere",
+      "text1": "In ZenVibe, crediamo che il benessere non sia un lusso occasionale, ma una necessità vitale. Ci dedichiamo a offrire un rifugio di serenità e relax in mezzo al caos quotidiano, offrendo massaggi e terapie adattate alle esigenze specifiche del tuo corpo.",
+      "text2": "Le nostre terapiste esperte combinano tecniche tradizionali e innovative per alleviare tensioni profonde, calmare il sistema nervoso e rivitalizzare la tua energia. Ogni sessione è prorgattata per essere un'esperienza unica e rigenerante.",
+      "image": "images/about-spa.png"
+    },
+    "services": {
+      "title": "I nostri Trattamenti Terapéutici",
+      "subtitle": "Scopri la nostra selezione di terapie e scegli il massaggio ideale per rivitalizzare il tuo corpo e rilassare la tua mente.",
+      "list": [
+        {
+          "id": "service-1",
+          "name": "Massaggio Rilassante con Aromaterapia",
+          "price": "60 €",
+          "duration": "60 min",
+          "description": "Massaggio completo del corpo con oli essenziali biologici per calmare il sistema nervoso, alleviare lo stress mentale e rilassare delicatamente la muscolatura.",
+          "image": "images/service-relax.png"
+        },
+        {
+          "id": "service-2",
+          "name": "Massaggio Decontratturante Profondo",
+          "price": "70 €",
+          "duration": "60 min",
+          "description": "Terapia dei tessuti profondi progettata per sciogliere contratture severe, alleviare le tensioni muscolari accumulate e ripristinare la naturale mobilità del corpo.",
+          "image": "images/service-deep.png"
+        },
+        {
+          "id": "service-3",
+          "name": "Terapia con Pietre Vulcaniche Calde",
+          "price": "85 €",
+          "duration": "75 min",
+          "description": "Combinazione di massaggio manuale e posizionamento di pietre calde su punti energetici chiave, consentendo al calore di alleviare il dolore muscolare e rilassare i tendini.",
+          "image": "images/service-stone.png"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Recensioni dei Clienti Soddisfatti",
+      "list": [
+        {
+          "quote": "Sono uscita completamente rigenerata dal massaggio rilassante. L'ambiente trasmette una pace unica e le terapiste sono molto professionali. Tornerò presto!",
+          "author": "Sofía Martínez",
+          "role": "Cliente Frecuente"
+        },
+        {
+          "quote": "Soffro di mal di schiena cronico a causa del lavoro sedentario davanti al computer. Il massaggio decontratturante mi ha rigenerato. Altamente raccomandato.",
+          "author": "Carlos Ruiz",
+          "role": "Graphic Designer"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Prenota il tuo Momento Zen",
+      "address": "Avenida de la Armonía 456, Piano Alto",
+      "phone": "+39 02 5555 1234",
+      "whatsapp": "390255551234",
+      "email": "ciao@zenvibemasajes.com",
+      "hours": "Lunedì a Sabato: 09:00 - 20:00",
+      "labelAddress": "Indirizzo",
+      "labelPhone": "Telefono",
+      "labelWhatsapp": "WhatsApp",
+      "labelEmail": "E-mail",
+      "labelHours": "Orari di Apertura",
+      "formTitle": "Inviaci un Messaggio",
+      "formName": "Nome Completo",
+      "formNamePlaceholder": "Inserisci il tuo nome",
+      "formEmail": "E-mail",
+      "formEmailPlaceholder": "Inserisci la tua e-mail",
+      "formService": "Servizio di Interesse",
+      "formServiceSelect": "Seleziona un servizio",
+      "formDate": "Data e Ora Tentative",
+      "formSubmit": "Invia Richiesta",
+      "formAlert": "Richiesta inviata. Ti contatteremo presto."
+    }
+  }
+}

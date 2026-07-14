@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ZenVibe | Masajes Terapéuticos y Relajación</title>
+  <meta name="description" content="Descubre masajes relajantes, descontracturantes y terapias con piedras calientes en ZenVibe. Tu espacio ideal de paz y renovación corporal.">
+  
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome para Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="navbar" id="navbar">
+    <div class="logo">Zen<span>Vibe</span></div>
+    <ul class="nav-links">
+      <li><a href="#inicio" id="nav-home" data-field="nav.home">Inicio</a></li>
+      <li><a href="#nosotros" id="nav-about" data-field="nav.about">Nosotros</a></li>
+      <li><a href="#servicios" id="nav-services" data-field="nav.services">Servicios</a></li>
+      <li><a href="#testimonios" id="nav-testimonials" data-field="nav.testimonials">Testimonios</a></li>
+      <li><a href="#contacto" id="nav-contact" data-field="nav.contact">Contacto</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="it">IT</button>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1 id="hero-title" data-field="hero.title">Bienestar y Relajación</h1>
+      <p id="hero-subtitle" data-field="hero.subtitle">Experiencias de masajes terapéuticos diseñadas para restaurar tu equilibrio natural.</p>
+      <a href="#contacto" id="hero-btn" class="btn-primary" data-field="hero.buttonText">Reservar Cita</a>
+    </div>
+  </section>
+
+  <!-- Sección Nosotros (About) -->
+  <section class="about" id="nosotros">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image img-editable-container" id="about-img-container">
+          <img id="about-image" src="" alt="Nuestra Filosofía de Bienestar" data-field="about.image">
+        </div>
+        <div class="about-text">
+          <h2 id="about-title" data-field="about.title">Nuestra Filosofía</h2>
+          <p id="about-text1" data-field="about.text1">Cargando...</p>
+          <p id="about-text2" data-field="about.text2">Cargando...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios (Services) -->
+  <section class="services" id="servicios">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 id="services-title" data-field="services.title">Nuestros Tratamientos</h2>
+        <p id="services-subtitle" data-field="services.subtitle">Selecciona el tratamiento perfecto para ti y déjate consentir.</p>
+      </div>
+      <div class="services-grid" id="services-list-container">
+        <!-- Renderizado dinámico desde app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Testimonios (Testimonials) -->
+  <section class="testimonials" id="testimonios">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 id="testimonials-title" data-field="testimonials.title">Lo que Dicen Nuestros Clientes</h2>
+      </div>
+      <div class="testimonials-grid" id="testimonials-list-container">
+        <!-- Renderizado dinámico desde app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section class="contact" id="contacto">
+    <div class="section-container">
+      <div class="contact-grid">
+        
+        <!-- Info de contacto -->
+        <div class="contact-info">
+          <h3 id="contact-title" data-field="contact.title">Reserva tu Momento Zen</h3>
+          <ul class="contact-info-list">
+            
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-item-text">
+                <h4 id="label-address" data-field="contact.labelAddress">Dirección</h4>
+                <p id="contact-address" data-field="contact.address">Cargando...</p>
+              </div>
+            </li>
+            
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-item-text">
+                <h4 id="label-phone" data-field="contact.labelPhone">Teléfono</h4>
+                <p id="contact-phone" data-field="contact.phone">Cargando...</p>
+              </div>
+            </li>
+            
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-item-text">
+                <h4 id="label-whatsapp" data-field="contact.labelWhatsapp">WhatsApp</h4>
+                <a id="contact-whatsapp-link" href="#" target="_blank">
+                  <span id="contact-whatsapp" data-field="contact.phone">Escríbenos por WhatsApp</span>
+                </a>
+              </div>
+            </li>
+            
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <h4 id="label-email" data-field="contact.labelEmail">Correo Electrónico</h4>
+                <p id="contact-email" data-field="contact.email">Cargando...</p>
+              </div>
+            </li>
+            
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contact-item-text">
+                <h4 id="label-hours" data-field="contact.labelHours">Horarios de Atención</h4>
+                <p id="contact-hours" data-field="contact.hours">Cargando...</p>
+              </div>
+            </li>
+            
+          </ul>
+          
+          <div class="social-links">
+            <a id="contact-facebook" href="#" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a id="contact-instagram" href="#" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <!-- Formulario (No editable, funcional) -->
+        <div class="contact-form-card">
+          <h3 id="form-title" data-field="contact.formTitle">Envíanos un Mensaje</h3>
+          <form id="booking-form">
+            <div class="form-group">
+              <label for="form-name" id="form-label-name" data-field="contact.formName">Nombre Completo</label>
+              <input type="text" id="form-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email" id="form-label-email" data-field="contact.formEmail">Correo Electrónico</label>
+              <input type="email" id="form-email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="form-service" id="form-label-service" data-field="contact.formService">Servicio de Interés</label>
+              <select id="form-service" class="form-control" required>
+                <!-- Opciones cargadas dinámicamente desde app.js -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-date" id="form-label-date" data-field="contact.formDate">Fecha y Hora Tentativa</label>
+              <input type="datetime-local" id="form-date" class="form-control" required>
+            </div>
+            <button type="submit" id="form-submit-btn" class="btn-primary" style="width: 100%; margin-top: 10px;" data-field="contact.formSubmit">Solicitar Cita</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="section-container" style="padding: 20px 0;">
+      <p>&copy; 2026 ZenVibe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Input oculto para subir archivos del editor visual (será reutilizado por las imágenes) -->
+  <input type="file" id="admin-file-input" style="display: none;" accept="image/*">
+
+  <!-- Scripts principales -->
+  <script src="js/app.js"></script>
+</body>
+</html>

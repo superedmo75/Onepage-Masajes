@@ -531,11 +531,35 @@ function setupSmoothScroll() {
           
           // Calcular la posición final restando el alto de la cabecera fija
           const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight + 15;
+          const startPosition = window.scrollY;
+          const distance = targetPosition - startPosition;
+          const duration = 1000; // Duración de la transición en milisegundos (1 segundo)
+          let startTime = null;
           
-          window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth"
-          });
+          // Función de atenuación (easing): easeInOutQuad (comienza lento, acelera, y frena suave)
+          function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          }
+          
+          // Función que anima el scroll fotograma a fotograma
+          function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            
+            if (timeElapsed < duration) {
+              window.requestAnimationFrame(animation);
+            } else {
+              // Garantizar que quede exactamente en la posición final al terminar
+              window.scrollTo(0, targetPosition);
+            }
+          }
+          
+          window.requestAnimationFrame(animation);
         }
       }
     });

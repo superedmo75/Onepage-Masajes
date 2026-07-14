@@ -135,8 +135,8 @@ function renderPageContent() {
         </div>
         <h3 data-field="services.list[${index}].name">${service.name}</h3>
         <p data-field="services.list[${index}].description">${service.description}</p>
-        <a href="#contacto" class="btn-primary" style="margin-top: auto; text-align: center; font-size: 0.75rem; padding: 10px 20px;">
-          ${currentLang === "es" ? "Reservar" : "Prenota"}
+        <a href="#contacto" class="btn-primary" data-field="services.buttonText" style="margin-top: auto; text-align: center; font-size: 0.75rem; padding: 10px 20px;">
+          ${siteData.services.buttonText || (currentLang === "es" ? "Reservar" : "Prenota")}
         </a>
       </div>
     `;
@@ -258,10 +258,13 @@ function enableEditMode(showNotification = true) {
     el.contentEditable = "true";
     
     // Prevenir el comportamiento por defecto de enlaces/botones en modo edición
-    if (el.tagName === "A") {
+    if (el.tagName === "A" || el.tagName === "BUTTON") {
       el.onclick = (e) => {
         if (isEditMode) e.preventDefault();
       };
+      if (el.tagName === "BUTTON" && el.type === "submit") {
+        el.type = "button";
+      }
     }
     
     // Guardar cambios al escribir/perder el foco (se usa onblur directo para no duplicar listeners)

@@ -23,6 +23,7 @@
     "services": {
       "title": "Nuestros Tratamientos Terapéuticos",
       "subtitle": "Descubre nuestra selección de terapias y elige el masaje ideal para revitalizar tu cuerpo y descansar tu mente.",
+      "buttonText": "Reservar",
       "list": [
         {
           "id": "service-1",
@@ -113,6 +114,7 @@
     "services": {
       "title": "I nostri Trattamenti Terapéutici",
       "subtitle": "Scopri la nostra selezione di terapie e scegli il massaggio ideale per rivitalizzare il tuo corpo e rilassare la tua mente.",
+      "buttonText": "Prenota",
       "list": [
         {
           "id": "service-1",
